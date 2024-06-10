@@ -6,7 +6,7 @@
     <script>
         window.process = { browser: true, env: { NODE_ENV: "production" } };
     </script>
-
+    <link rel="stylesheet" href="styles/main.css">
     <script type="importmap">
         {
             "imports": {
@@ -19,6 +19,12 @@
 </head>
 
 <body>
-This is a test page
+        <!-- This is a placeholder for the side-menu -->
+        <div id="sidebar">
+            <a href="./index.html">Overview</a>
+            <a href="./calendar.html">Calendar</a>
+            <a href="./tasks.html">Tasks</a>
+            <a href="./journal.html">Journal</a>
+        </div>
 </body>
 </html>

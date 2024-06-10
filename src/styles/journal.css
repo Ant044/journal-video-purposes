@@ -11,7 +11,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #0F0; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -32,7 +31,6 @@
     position: fixed;
     top: 0;
     left: 10%; /* Align resizable box to the right of sidebar */
-    background-color: #FFF5ED;
     overflow: hidden; /* When the resize-bar clips into elements, they don't wrap */
 }
 
@@ -41,12 +39,9 @@
     padding: .01em;
     overflow: scroll;
     margin-top: 3.5em;
-    scrollbar-width: none; /* HIDE scroll bar */
-    border-top: 0.5em solid #000;
 }
 
 #create-journal { /* The plus button on the top-right of the tree view */
-    background-color: #0F0;
     position:absolute;
     width: 2em;
     height: 2em;
@@ -55,7 +50,6 @@
 }
 
 #delete-journal { /* The minus button on the top-left of the tree view */
-    background-color: #F00;
     position:absolute;
     width: 2em;
     height: 2em;
@@ -64,7 +58,6 @@
 }
 
 #delete-all-journals { /* The minus button on the top-left of the tree view */
-    background-color: #F00;
     position: absolute;
     top: 2em;
     width: calc(100% - 6em);
@@ -74,7 +67,6 @@
 }
 
 #journal-view{ /* The section to the right of the tree-view */
-    background-color:#FFF5ED;
     height: 100vh;
     right: 0;
     position:absolute;
@@ -87,7 +79,6 @@
 #resizer {
     width: 0.5em;
     height: inherit;
-    background-color: black;
     cursor: ew-resize;
     position: absolute;
     top: 0;
@@ -145,8 +136,7 @@
 }
 
 .selected { /* The selected JOURNAL in the tree view */
-    position: relative; /* Ensure the element is positioned relatively */
-    background-color: #e6d2c2; /* Original background color */
+    position: relative; /* Ensure the element is positioned relatively */=
 }
 
 /* Pseudo element to allow highlight to extend past div boundaries */

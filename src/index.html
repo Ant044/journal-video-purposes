@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journal | Overview</title>
     <link rel="stylesheet" href="styles/journal.css">
+    <link rel="stylesheet" href="styles/main.css">
     <!-- Polyfill start - we can utilize importmap to elegantly import external vendors / libraries -->
         <script>
             window.process = { browser: true, env: { NODE_ENV: "production" } };
@@ -22,7 +23,13 @@
 </head>
 
 <body>
-    <a href="./journal.html">Journal</a>
+        <!-- This is a placeholder for the side-menu -->
+        <div id="sidebar">
+            <a href="./index.html">Overview</a>
+            <a href="./calendar.html">Calendar</a>
+            <a href="./tasks.html">Tasks</a>
+            <a href="./journal.html">Journal</a>
+        </div>
     
     <modal-journal></modal-journal>
 
