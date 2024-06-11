@@ -8,6 +8,30 @@ let calendarGrid;
 let prevMonthBtn;
 let nextMonthBtn;
 
+let previousWidth = window.innerWidth;
+
+window.addEventListener('resize', scaleCalendarDays);
+let currentScale = 1
+function scaleCalendarDays() {
+    const sidebar = document.querySelector('sidebar-layout');
+    const calendarDays = document.querySelectorAll('.calendar-day');
+    calendarDays.forEach(day => {
+        day.style.transform = `scale(${currentScale})`; // Scales up by 10%
+    });
+    sidebar.style.transform = `scale(${currentScale})`; // Scales up by 10%
+    currentScale = currentScale + 0.1;
+
+    const currentWidth = window.innerWidth;
+
+    if (currentWidth > previousWidth) {
+        const newModal = document.createElement('modal-journal');
+        document.body.appendChild(newModal);
+    }
+
+    // Update the previous width to the current width
+    previousWidth = currentWidth;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     monthYear = document.getElementById('month-year');
     calendarGrid = document.getElementById('calendar-grid');

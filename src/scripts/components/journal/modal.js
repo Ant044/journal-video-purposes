@@ -26,7 +26,7 @@ class Modal extends HTMLElement {
                 width: 100%;
                 height: 100%;
                 overflow: auto;
-                background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+                background-color: rgba(0, 0, 0, 0.03); /* Semi-transparent background */
             }
             .modal-content {
                 background-color: #fff;
@@ -41,11 +41,11 @@ class Modal extends HTMLElement {
             @keyframes fadeIn {
                 from {
                     opacity: 0;
-                    transform: scale(0.95);
+                    transform: scale(0.55);
                 }
                 to {
                     opacity: 1;
-                    transform: scale(1);
+                    transform: scale(1.3);
                 }
             }
             .close-button {
