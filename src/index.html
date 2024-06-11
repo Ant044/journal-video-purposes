@@ -27,12 +27,7 @@
 
 <body>
             <!-- This is a placeholder for the side-menu -->
-            <div id="sidebar">
-                <a href="./index.html">Overview</a>
-                <a href="./calendar.html">Calendar</a>
-                <a href="./tasks.html">Tasks</a>
-                <a href="./journal.html">Journal</a>
-            </div>
+    <img src="/image4-2.png" width="800px">
     <div class="container">
         <task-list>To do:     </task-list>
         <task-list>In progress:     </task-list>
@@ -46,8 +41,17 @@
     <div class="containerpie">
     </div>
 
+    <img src="/Completed Overview.png">
+    <img src="/image4-2.png" width="800px">
+
     <script type="module" src="scripts/components/upcoming-tasks.js"></script>
     <script type="module" src="scripts/components/task-component.js"></script>
     <script type="module" src="scripts/components/task-pie-component.js"></script>
+    <script>
+        // Scroll to the top on page reload
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
 </body>
 </html>
